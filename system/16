@@ -1,0 +1,2 @@
+Le service Crontab (modifier les taches avec crontab -e) permet de planifier
+des taches en fonction du temps (minute, heure, jour du mois, mois, jour de la semaine).

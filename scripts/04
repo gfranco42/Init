@@ -1,0 +1,10 @@
+#!bin/bash
+
+CAT='cat / root/tempo'
+MD5='md5sum /etc/crontab'
+
+if [ "$CAT" != "$MD5" ]
+then
+	md5sum /etc/crontab > ~/tempo
+	mail -s "File modification" root@localhost < /home/gfranco/text
+fi
